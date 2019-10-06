@@ -1,0 +1,21 @@
+---
+driver:
+  name: vagrant
+
+verifier:
+  name: inspec  
+
+provisioner:
+  name: ansible_playbook
+  roles_path: roles
+  hosts: localhost 
+  require_chef_for_busser: false
+  require_ruby_for_busser: false  
+  #requirements_path: requirements.yml  
+
+platforms:
+  - name: ubuntu-18.04
+  - name: centos-7
+
+suites:
+  - name: default
