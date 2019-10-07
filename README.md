@@ -1,4 +1,5 @@
-# Ansible 7
+# Ansible Test with kitchen and inspec
+Demo project to test base role
 
 ## Tests
 
